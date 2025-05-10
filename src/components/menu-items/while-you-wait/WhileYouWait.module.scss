@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  font-size: 1.4rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.price {
+  font-style: italic;
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 801px) {
+  .container {
+    padding: 0 2rem;
+  }
+}

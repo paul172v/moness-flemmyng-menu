@@ -1,0 +1,120 @@
+@import "/src/sass/base";
+.page {
+  background-color: $background-color-secondary;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1920px;
+  max-width: 1920px;
+  background-color: $background-color-primary;
+  padding-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 8rem 1fr;
+  margin: 0 4rem;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  align-items: center;
+  justify-content: center;
+  color: $font-color-secondary;
+
+  .h1-small {
+    font-size: 2rem;
+  }
+
+  .h1-large {
+    font-size: 2.5rem;
+  }
+}
+
+.col {
+  width: 90%;
+  margin-left: 5%;
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+.heading,
+.heading--margin-top {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.heading--margin-top {
+  margin-top: 2rem;
+}
+
+.while-you-wait-container {
+  @include container;
+  margin-bottom: 2rem;
+}
+
+.allergens-container {
+  @include container;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.allergen-text {
+  margin: 2rem 2rem 0 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.heading--centered {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 1921px) {
+  .container {
+    margin: 4rem 0;
+  }
+}
+
+@media only screen and (max-width: 801px) {
+  .h1-small {
+    margin-top: 2rem;
+  }
+
+  .h1-large {
+    margin-bottom: 2rem;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4rem;
+  }
+
+  .heading {
+    margin-top: 0;
+  }
+
+  .col {
+    width: 100%;
+    margin: 0 0 2rem 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+}

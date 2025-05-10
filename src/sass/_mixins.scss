@@ -1,0 +1,13 @@
+@import "/src/sass/colors";
+
+@mixin container {
+  background-color: rgb(3, 87, 58);
+  padding: 2rem, 3rem;
+  border-radius: 4px;
+  color: $font-color-tertiary;
+  border: 4px white solid;
+  box-shadow: 4px 4px 4px rgb(218, 218, 218);
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}

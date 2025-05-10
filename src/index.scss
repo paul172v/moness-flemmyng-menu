@@ -1,0 +1,25 @@
+@import "/src/sass/base";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.u-row {
+  display: flex;
+}
+
+/*
+
+font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
+*/
