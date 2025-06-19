@@ -83,6 +83,18 @@
   font-size: 2rem;
 }
 
+.loader-wrapper {
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.error-message {
+  font-size: 2rem;
+}
+
 @media only screen and (min-width: 1921px) {
   .container {
     margin: 4rem 0;
