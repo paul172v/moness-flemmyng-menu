@@ -49,7 +49,7 @@ const WhileYouWait = (props: IProps) => {
         <div className={classes.description}>{props.description}</div>
       </div>
       <div className={classes["u-row"]}>
-        <div className={classes.price}>£{props.price}</div>
+        <div className={classes.price}>£{props.price.toFixed(2)}</div>
         <div className={props.allergens ? classes.allergens : ""}>
           {props.allergens ? `(${allergens})` : null}
         </div>

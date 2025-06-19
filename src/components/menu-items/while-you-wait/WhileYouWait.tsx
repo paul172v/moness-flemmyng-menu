@@ -30,8 +30,10 @@ const WhileYouWait = (props: IProps) => {
   return (
     <div className={classes.container}>
       {props.name}
-      {props.allergens ? ` (${props.allergens}) ` : ""}{" "}
-      <div className={classes.price}>£{props.price}</div>
+      {props.allergens && props.allergens.length > 0
+        ? ` (${props.allergens}) `
+        : ""}{" "}
+      <div className={classes.price}>£{props.price.toFixed(2)}</div>
     </div>
   );
 };
