@@ -60,7 +60,9 @@ function App() {
     const fetchMenuData = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch("http://localhost:5000/api/v1/flemmyng/");
+        const response = await fetch(
+          "https://moness-backend-4c94e04e2f82.herokuapp.com/api/v1/flemmyng/"
+        );
         if (!response.ok) throw new Error("Failed to fetch menu data");
         const data = await response.json();
 

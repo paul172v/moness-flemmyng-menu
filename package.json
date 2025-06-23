@@ -1,8 +1,9 @@
 {
-  "name": "02-example",
+  "name": "moness-flemmyng-menu",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "Paul Harris",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
